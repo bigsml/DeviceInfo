@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'io.fabric'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
@@ -59,12 +58,4 @@ dependencies {
     compile 'com.github.lzyzsd:circleprogress:1.2.1'
     /** Lottie by Airbnb*/
     compile 'com.airbnb.android:lottie:2.5.0-rc1'
-
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
-        transitive = true
-    }
-
-    compile 'com.google.android.gms:play-services-location:11.8.0'
 }
-
-apply plugin: 'com.google.gms.google-services'
